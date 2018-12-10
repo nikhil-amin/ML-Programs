@@ -33,14 +33,6 @@ for i in range(epoch):
 	outinp1 = np.dot(hlayer_act,wout)
 	outinp = outinp1 + bout
 	output = sigmoid(outinp)
-	EO = y-output
-	outgrad=derivatives_sigmoid(output)
-	d_output = EO*outgrad
-	EH = d_output.dot(wout.T)
-	hiddengrad = derivatives_sigmoid(hlayer_act)
-	d_hiddenlayer = EH * hiddengrad
-	wout += hlayer_act.T.dot(d_output) * lr
-	wh+= X.T.dot(d_hiddenlayer)*lr
 
 print("Input: \n " + str(X))
 print("Actual output: \n " + str(y))
