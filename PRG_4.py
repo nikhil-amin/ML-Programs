@@ -12,11 +12,7 @@ y = y/100
 def sigmoid(x):
 	return 1/(1 + np.exp(-x))
 
-def derivatives_sigmoid(x):
-	return x * (1 - x)
-
 epoch = 7000
-lr = 0.1
 inputlayer_neurons = 2
 hiddenlayer_neurons = 3
 output_neurons = 1
