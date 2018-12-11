@@ -1,3 +1,7 @@
+# (QUESTION: 01)
+# Implement and demonstratethe FIND-Salgorithm for finding the most specific hypothesis
+# based on a given set of training data samples. Read the training data from a .CSV file
+
 import csv
 a=[]
 with open('PRG_1.csv') as csfile:
