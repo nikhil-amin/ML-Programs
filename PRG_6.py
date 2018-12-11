@@ -16,7 +16,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 count_vect = CountVectorizer()
 xtrain_dtm = count_vect.fit_transform(xtrain)
 xtest_dtm = count_vect.transform(xtest)
-df=pd.DataFrame(xtrain_dtm.toarray(), columns=count_vect.get_feature_names())
 
 from sklearn.naive_bayes import MultinomialNB
 clf = MultinomialNB().fit(xtrain_dtm,ytrain)
