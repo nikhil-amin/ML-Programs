@@ -6,11 +6,11 @@
 import pandas as pd
 msg = pd.read_csv('PRG_6.csv', names=['message','label'])              
 msg['labelnum']=msg.label.map({'pos':1,'neg':0})
-X=msg.message
+x=msg.message
 y=msg.labelnum
 
 from sklearn.model_selection import train_test_split
-xtrain, xtest, ytrain, ytest=train_test_split(X,y)  
+xtrain, xtest, ytrain, ytest=train_test_split(x,y)  
 
 from sklearn.feature_extraction.text import CountVectorizer
 count_vect = CountVectorizer()
