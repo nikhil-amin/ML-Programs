@@ -3,7 +3,7 @@
 # fit data points. Select appropriate data set for your experiment and draw graphs.
 
 import numpy as np
-from bokeh.plotting import figure,show,output_notebook
+from bokeh.plotting import figure,show
 from bokeh.layouts import gridplot
 
 def local_regression(x0,X,Y,tau):
